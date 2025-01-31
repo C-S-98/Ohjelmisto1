@@ -17,7 +17,11 @@ def pi_laske(pisteidan_maara):
     pi = 4 * piste / pisteidan_maara
     return pi
 
-pisteidan_maara = int(input("Anna arvottavien pisteiden määrä: "))
+try:
+    pisteidan_maara = int(input("Anna arvottavien pisteiden määrä: "))
+    pi_likiarvo = pi_laske(pisteidan_maara)
 
-pi_likiarvo = pi_laske(pisteidan_maara)
-print(f"Piin likiarvo on noin {pi_likiarvo}.")
+    print(f"Piin likiarvo on noin {pi_likiarvo}.")
+
+except ValueError:
+    print("Syötä oikea luku, kiitos.")
