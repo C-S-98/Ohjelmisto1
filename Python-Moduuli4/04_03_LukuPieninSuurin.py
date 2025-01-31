@@ -7,7 +7,7 @@ while True:
     syote = input("Syötetään luku: ")
 
     if syote == "":
-        print("Kiitos käytöstä.")
+        print("Kiitos käytöstä.\n")
         break
 
     try:
