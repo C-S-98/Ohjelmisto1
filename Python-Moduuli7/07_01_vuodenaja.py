@@ -1,3 +1,14 @@
+'''
+Kirjoita ohjelma, joka kysyy käyttäjältä kuukauden numeron,
+    jonka jälkeen ohjelma tulostaa sitä vastaavan vuodenajan
+    (kevät, kesä, syksy, talvi).
+Tallenna ohjelmassasi kuukausia
+    vastaavat vuodenajat merkkijonoina monikkotietorakenteeseen.
+Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi siten,
+    että joulukuu on ensimmäinen talvikuukausi.
+'''
+
+
 def vuodenaika(kuukausi):
     vuodenajat = ("talvi", "talvi",
                   "kevät", "kevät", "kevät",
@@ -30,3 +41,25 @@ try:
 
 except ValueError:
     print("Virheellinen syöte. Anna kokonaisluku välillä 1-12.")
+
+
+'''
+vuodenaika_tupa = {"talvi", "kevät", "kesä", "syksy"}
+
+kuukausi = int(input("Anna kuukausi numeroa (1-12): "))
+
+if kuukausi == 12 or kuukausi == 1 or kuukausi == 2:
+    print(vuodenaika_tupa[0])
+
+elif 2 < kuukausi > 6:
+    print(vuodenaika_tupa[1])
+
+elif 5 < kuukausi > 9:
+    print(vuodenaika_tupa[2])
+
+elif 8 < kuukausi > 12:
+    print(vuodenaika_tupa[3])
+
+elif kuukausi > 12:
+    print("Syöte nuomero 1 - 12.")
+'''

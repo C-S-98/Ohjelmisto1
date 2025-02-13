@@ -22,3 +22,18 @@ suurinta = luvut[:5]
 
 print(f"Viisi suurinta lukua suuruusjärjestyksessä: "
       f"{', '.join(f'{luku}' for luku in suurinta)}")
+
+
+'''
+luvut = []
+
+syote = input("Anna kokonaisluku (tyhjä lopetta): ")
+while syote != "":
+    luku = int(syote)
+    luvut.append(luku)
+    syote = input("Anna kokonaisluku (tyhjä lopetta): ")
+luvut.sort(reverse = True)
+
+for i in range(5):
+    print(luvut[i])
+'''
