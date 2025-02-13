@@ -19,13 +19,21 @@ def hae_lentokentat_maakoodilla(maakoodi):
     )
 
     cursor = conn.cursor()
-
+    '''
     query = """
         SELECT type, COUNT(*) 
         FROM airport 
         WHERE iso_country = %s 
         GROUP BY type
     """
+    '''
+    query = (
+        "SELECT type, COUNT(*) "
+        "FROM airport "
+        "WHERE iso_country = %s "
+        "GROUP BY type"
+    )
+
     cursor.execute(query, (maakoodi,))
 
     result = cursor.fetchall()
